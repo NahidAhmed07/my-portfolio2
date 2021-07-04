@@ -1,3 +1,6 @@
+html {
+  scroll-behavior:smooth;
+}
 body{
   margin: 0;
   padding: 0;
@@ -6,8 +9,8 @@ body{
 }
 
 .my-nav{
-  background-color: 	#727272c4;
-  height: 10vh;
+  background-color: 	#494949d2;
+  height: 12vh;
   width: 100%;
   display: flex;
   justify-content:space-around;
@@ -58,7 +61,7 @@ body{
   margin-bottom: 0px;
 
 }
-.header-text h2{
+.header-text h2,p{
   font-weight: 200;
   font-style: italic;
   margin-top: 0px;
@@ -69,7 +72,7 @@ body{
 
 .projects{
   background-color: #45567D;
-  margin-bottom: 300px;
+  /* margin-bottom: 300px; */
 
 }
 .project-header h1{
@@ -128,16 +131,85 @@ body{
 .project-btn .btn{
   color:#ffffff;
   font-size: 1.25rem;
-  padding:10px 20px;
+  padding:10px 30px;
   text-decoration: none;
   transition: 0.5s;
   background-color: #303841;
+  position: relative;
+  border-radius: 3px;
 }
 .btn:hover{
   background-color:#BE3144;
+  
 
 }
-
-
-
-
+.btn:hover .btn-arrow{
+  transform:translateX(3px);
+}
+.btn-arrow{
+font-weight: 700;
+position: absolute;
+font-size: 1.75rem;
+right: 10px;
+top: 4px;
+transition: 0.5s;
+  
+}
+#contact{
+  align-items: flex-start;
+  padding-top: 50px;
+  height: 60vh;
+  width: 100%;
+  background-color: #303841;
+  margin: 0;
+  color: #ffffff;
+}
+#contact .p{
+  font-size: 1.4rem;
+  color: #ffffff;
+  
+}
+.contact-item{
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 50px;
+  
+}
+.contact-item a{
+  text-decoration: none;
+  color:#ffffff ;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.contact-item a:hover{
+  color: #BE3144;
+  transform: translateY(8px);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #303841;
+  border-top: 5px solid #BE3144 ;
+  padding: 30px 0px;
+ 
+}
+#p,#p1{
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style:normal;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+#p{
+  width: 70%;
+}
+#p1{
+  text-align: left;
+  width:35%;
+}

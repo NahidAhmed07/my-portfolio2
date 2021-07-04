@@ -7,27 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,300&display=swap" rel="stylesheet">
-  <title>my-protfolio2</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>  
+<title>my-protfolio2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="my-nav">
     <img src="images/namelogo.png" alt="logo">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="header">
+  <section class="header" id="home">
     <div class="header-text">
       <h1>Hey I am Nahid</h1>
       <h2>a web developer</h2>
     </div>
   </section>
 
-  <section class="projects">
+  <section id="work" class="projects">
     <div class="project-header">
       <h1>These are some of my projects</h1>
     </div>
@@ -95,10 +96,32 @@
     </div>
     
     <div class="project-btn">
-      <a href="#" class="btn"> Show all &#62</a>
+      <a href="#" class="btn"> Show all <span class="btn-arrow">&#62</span></a>
     </div>
     
   </section>
+
+  <section id="contact" class="">
+    <div class="contact-header header-text" >
+      <h1>Let's work toghether...</h1>
+      <p class="p">How do you take your coffe?</p>
+    </div>
+
+    <div class="contact-item">
+    <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+    <a href="#"><i class="fab fa-github-square"></i> GitHub</a>
+    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+    <a href="#"><i class="fas fa-at"></i> Send a mail</a>
+    <a href="#"> <i class="fas fa-phone"></i> Call me</a>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p id="p">**This is just a fake portfolio. All the projects and contact details given are not real.
+    </p>
+    <p id="p1">© Nahid Creadit to Programming Hero </p>
+  </footer>
   
 </body>
 </html>
