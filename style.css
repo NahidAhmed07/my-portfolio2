@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.my-nav{
+  background-color: 	#222222b2;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.my-nav img{
+  height: 50px;
+
+}
+.my-nav ul{
+  margin: 0;
+  /* padding-right:100px ; */
+}
+.my-nav ul li{
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.my-nav ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.my-nav ul li a:hover{
+  color:orange ;
+}
